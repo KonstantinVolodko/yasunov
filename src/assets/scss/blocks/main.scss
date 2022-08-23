@@ -1,0 +1,375 @@
+.main {
+    font-family: "NeoSansCyrLight";
+
+    .firstSliderBlock {
+
+        .mySwiper {
+            .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+                color: #8b6f4b;
+            }
+
+            .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+                color: #8b6f4b;
+            }
+
+            .swiper-button-next {
+                right: 5%;
+            }
+
+            .swiper-button-prev {
+                left: 5%;
+            }
+
+            .swiper-pagination-bullet-active {
+                background: #8b6f4b;
+            }
+
+            .swiper-slide {
+
+                .imgContainer {
+                    img {
+                        width: 100%;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .statBlock {
+        display: flex;
+        padding-left: 18rem;
+        padding-right: 18rem;
+        justify-content: center;
+        padding-top: 2.9rem;
+        padding-bottom: 3.9rem;
+        width: 100%;
+        border-bottom: 0.2rem solid #043930;
+        box-shadow: 0px 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
+        background: url(../images/main/backgroundElement1.png) bottom left no-repeat, url(../images/main/backgroundElement2.png) top right no-repeat, linear-gradient(180deg, #12A58A 0%, #00634F 100%);
+
+        
+
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            width: 33%;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            border-left: 1px solid #008B73;
+
+            .title {
+                font-family: "NeoSansCyrRegular";
+                font-size: 4rem;
+                line-height: 4.8rem;
+                text-align: center;
+                letter-spacing: 0.03em;
+                color: #FFFFFF;
+                text-shadow: 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.4);
+            }
+
+            .subtitle {
+                font-size: 2rem;
+                line-height: 2.2rem;
+                text-align: center;
+                color: #D9BE8C;
+                text-shadow: 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.4);
+                text-align: center;
+            }
+        }
+    }
+
+    .secondSliderBlock {
+        padding-bottom: 7.6rem;
+        background: url(../images/main/backgroundElement3.png) left bottom no-repeat, url(../images/main/backgroundElem4.png) right top no-repeat;
+
+        .title {
+            font-family: "NeoSansCyrMedium";
+            font-size: 2.4rem;
+            line-height: 4.4rem;
+            text-align: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #065749;
+            padding-top: 2rem;
+        }
+
+        
+
+        .productsSlider {
+            margin-top: 7.5rem;
+
+            .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+                color: #8b6f4b;
+            }
+
+            .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+                color: #8b6f4b;
+            }
+
+            .swiper-button-next {
+                right: 5%;
+            }
+
+            .swiper-button-prev {
+                left: 5%;
+            }
+
+            .swiper-pagination-bullet-active {
+                background: #8b6f4b;
+            }
+
+            // .swiper-wrapper {
+            //     display: flex;
+            //     justify-content: center;
+            // }
+
+                .swiper-pagination2 {
+                    display: flex;
+                    justify-content: center;
+                }
+            
+            .swiper-slide {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+                p {
+                    font-family: "NeoSansCyrRegular";
+                    font-size: 2rem;
+                    line-height: 4.4rem;
+                    text-align: center;
+                    letter-spacing: 0.03em;
+                    text-transform: uppercase;
+                    color: #606060;
+                }
+                
+            }
+        }
+    }
+
+    .statBlockSecond {
+        padding-left: 19rem;
+        padding-right: 22.9rem;
+        width: 100%;
+        border-bottom: 0.2rem solid #043930;
+        box-shadow: 0px 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
+        background: url(../images/main/backgroundElement1.png) bottom left no-repeat, url(../images/main/backgroundElement2.png) top right no-repeat, linear-gradient(180deg, #12A58A 0%, #00634F 100%);
+        padding-top: 2rem;
+        padding-bottom: 1.6rem;
+
+        .title {
+            font-family: "NeoSansCyrMedium";
+            font-size: 2.2rem;
+            line-height: 3.5rem;
+            text-align: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-shadow: 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.4);
+        }
+    }
+
+
+    .servicesBlock {
+        background: url(../images/main/backgroundElement3.png) left bottom no-repeat, url(../images/main/backgroundElem4.png) right top no-repeat;
+        padding-bottom: 5rem;
+
+        .mainTitle {
+            font-family: "NeoSansCyrMedium";
+            font-size: 2.4rem;
+            line-height: 4.4rem;
+            text-align: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #065749;
+            margin-bottom: 5rem;
+        }
+
+        .contentBlock {
+            display: flex;
+            padding-left: 14.6rem;
+            padding-right: 7.9rem;
+            gap: 3rem;
+
+            div {
+                display: flex;
+                flex-direction: column;
+                width: 33.33%;
+                align-items: center;
+
+
+                .title {
+                    font-family: "NeoSansCyrMedium";
+                    font-size: 2rem;
+                    line-height: 2.5rem;
+                    text-align: center;
+                    color: #008B73;
+                    margin-top: 5.3rem;
+                }
+
+                .subtitle {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                    text-align: center;
+                    color: #606060;
+                    margin-top: 0.8rem;
+                }
+            }
+        }
+    }
+
+    .formContainer {
+        border-bottom: 0.2rem solid #043930;
+        box-shadow: 0px 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
+        background: url(../images/main/backgroundElement1.png) bottom left no-repeat, url(../images/main/backgroundElement2.png) top right no-repeat, linear-gradient(180deg, #12A58A 0%, #00634F 100%);
+        padding-top: 0.8rem;
+        padding-bottom: 2.2rem;
+        
+
+        .title {
+            font-family: "NeoSansCyrMedium";
+            font-size: 2.4rem;
+            line-height: 4.4rem;
+            text-align: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            text-shadow: 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.4);
+        }
+
+        .subtitle {
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            text-align: center;
+            color: #FFFFFF;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 2.1rem;
+
+            div {
+                display: flex;
+                gap: 1.7rem;
+                justify-content: center;
+                margin-top: 1.8rem;
+
+                input {
+                    font-size: 1.6rem;
+                    line-height: 2.2rem;
+                    display: flex;
+                    align-items: center;
+                    color: #FFFFFF;
+                    border: 0.1rem solid #8b6f4b;
+                    background: #065749;
+                    width: 20%;
+                    padding-top: 1.6rem;
+                    padding-bottom: 1.4rem;
+                    padding-left: 1.4rem;
+                    outline-color: #8b6f4b;
+                    outline-width: 0.3rem;
+                }
+    
+                input::-webkit-input-placeholder { color: rgba(255, 255, 255, 0.7); }
+                input::-moz-placeholder { color: rgba(255, 255, 255, 0.7); }
+            }
+
+            button {
+                width: max-content;
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+                text-align: center;
+                color: #00372E;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 0.1rem;
+                filter: drop-shadow(0.2rem 0.4rem 0.2rem rgba(0, 0, 0, 0.4));
+                background: linear-gradient(180deg, #DEBF82 0%, #B7975A 100%);
+                border: none;
+                padding-left: 5.1rem;
+                padding-top: 0.4rem;
+                padding-bottom: 0.2rem;
+                padding-right: 3.7rem;
+
+                svg {
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    fill: transparent;
+                }
+
+                
+            }
+
+            .licence {
+                font-weight: 400;
+                font-size: 1.3rem;
+                line-height: 1.6rem;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                color: #FFFFFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                a {
+                    font-weight: 400;
+                    font-size: 1.3rem;
+                    line-height: 1.6rem;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    color: #FFFFFF;
+                    padding-left: 0.3rem;
+                }
+            }
+            
+        }
+    }
+
+    .geography {
+        background: url(../images/main/backgroundElement3.png) left bottom no-repeat, url(../images/main/backgroundElem4.png) right top no-repeat;
+        padding-top: 2.6rem;
+        padding-bottom: 2.8rem;
+
+        .title {
+            font-family: "NeoSansCyrMedium";
+            font-size: 2.4rem;
+            line-height: 4.4rem;
+            text-align: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #065749;
+        }
+
+        .subtitle {
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            text-align: center;
+            color: #606060;
+        }
+
+        .imgContainer {
+            display: flex;
+            justify-content: center;
+            margin-top: 3.4rem;
+            margin-bottom: 3.4rem;
+        }
+
+        .countryes {
+            ol {
+                font-size: 2rem;
+                display: grid;
+                grid-template-columns: repeat(9, 1fr);
+            }
+        }
+    }
+}
