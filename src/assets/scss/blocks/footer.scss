@@ -1,0 +1,218 @@
+.footer {
+    font-family: "NeoSansCyrLight";
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    background: url(../images/main/backgroundElement1.png) bottom left no-repeat, url(../images/main/backgroundElement2.png) top right no-repeat, linear-gradient(180deg, #12A58A 0%, #00634F 100%);
+    padding-top: 2.9rem;
+    padding-bottom: 1.2rem;
+
+    @include breakpoint($hb-bp) {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    @include breakpoint($sm-bp) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 1rem;
+    }
+
+    .logoContainer {
+
+        @include breakpoint($lb-bp) {
+            width: 35%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .firstContainer {
+        display: flex;
+        // align-items: center;
+        justify-content: space-between;
+
+        @include breakpoint($sm-bp) {
+            display: none;
+        }
+        
+        .navigation {
+            display: flex;
+            gap: 4.3rem;
+            align-items: center;
+
+            @include breakpoint($xl-bp) {
+                display: none;
+            }
+            
+            a {
+                font-size: 1.8rem;
+                line-height: 2.2rem;
+                text-align: center;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                text-decoration: none;
+                
+            }
+        }
+
+        .helpContainer {
+            display: flex;
+        }
+
+        .phone {
+            
+
+            .contactsContainer {
+                display: flex;
+                flex-direction: column;
+
+                div {
+                    font-family: "SourceSansPro";
+                    display: flex;
+                    align-items: center;
+                    gap: 0.3rem;
+                    
+                }
+
+                .number {
+                    font-size: 2.2rem;
+                    line-height: 2.5rem;
+                    color: #FFFFFF;
+                    padding-left: 0.8rem;
+                    text-decoration: none;
+
+                    @include breakpoint($jb-bp) {
+                        font-size: 2rem;
+                    } 
+                }
+
+                .emailContainer {
+                    display: flex;
+                    gap: 1.3rem;
+                    padding-left: 2rem;
+                    
+                }
+
+                .emailText {
+                    font-family: "NeoSansCyrLight";
+                    font-size: 1.9rem;
+                    line-height: 2.5rem;
+                    color: #FFFFFF;
+
+                    @include breakpoint($jb-bp) {
+                        font-size: 1.7rem;
+                    } 
+                }
+
+                
+
+                
+            }
+
+            
+
+            
+            
+            div {
+                display: flex;
+
+                svg {
+                    width: 1.9rem;
+                    height: 1.9rem;
+                    fill: #FFFFFF;
+                }
+            }
+        }
+
+        button {
+            display: flex;
+            width: max-content;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            text-align: center;
+            color: #00372E;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(180deg, #DEBF82 0%, #B7975A 100%);
+            border: none;
+            filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.5));
+            height: max-content;
+            margin-left: 2.6rem;
+
+            @include breakpoint($jb-bp) {
+                font-size: 1.6rem;
+            } 
+
+            svg {
+                width: 1.6rem;
+                height: 1.6rem;
+                fill: transparent;
+                
+            }
+        }
+    }
+
+
+    .secondBlock {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+
+        @include breakpoint($lb-bp) {
+            flex-direction: column;
+            gap: 1rem;
+        }
+        
+
+        .confidence {
+            display: flex;
+            gap: 1.4rem;
+            font-family: "NeoSansCyrLight";
+
+            p {
+                font-size: 1.6rem;
+                line-height: 2.2rem;
+                color: #FFFFFF;
+
+                @include breakpoint($jb-bp) {
+                    font-size: 1.3rem;
+                } 
+            }
+
+            div {
+                width: 0.1rem;
+                border-right: 0.1rem solid #FFFFFF;
+            }
+
+            
+        }
+        
+
+        .vaspur {
+            display: flex;
+            gap: 1rem;
+
+            p {
+                font-size: 1.3rem;
+                text-align: center;
+                color: #FFFFFF;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+
+            svg {
+                width: 13.6rem;
+                height: 3rem;
+            }
+            
+        }
+        
+    }
+}
