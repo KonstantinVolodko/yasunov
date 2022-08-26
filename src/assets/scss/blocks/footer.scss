@@ -42,7 +42,8 @@
         .navigation {
             display: flex;
             gap: 4.3rem;
-            align-items: center;
+            // align-items: center;
+            padding-top: 1rem;
 
             @include breakpoint($xl-bp) {
                 display: none;
@@ -66,6 +67,10 @@
 
         .helpContainer {
             display: flex;
+
+            .btnContainer {
+                padding-top: 1.3rem;
+            }
         }
 
         .phone {
@@ -74,6 +79,8 @@
             .contactsContainer {
                 display: flex;
                 flex-direction: column;
+                gap: 1rem;
+                padding-top: 1rem;
 
                 div {
                     font-family: "SourceSansPro";
@@ -123,7 +130,7 @@
             }
 
             
-
+            
             
             
             div {

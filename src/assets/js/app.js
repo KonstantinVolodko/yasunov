@@ -29,19 +29,16 @@ let productsSlider = new Swiper(".productsSlider", {
     },
 
     navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".arrowRight",
+        prevEl: ".arrowLeft",
     },
 
     breakpoints: {
         // when window width is >= 320px
-        1124: {
+        860: {
             slidesPerView: 3,
         },
 
-        745: {
-            slidesPerView: 2,
-        },
     }
 }) 
 
