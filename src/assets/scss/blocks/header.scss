@@ -10,6 +10,12 @@
     padding-bottom: 2rem;
     justify-content: space-between;
 
+    
+
+    @include breakpoint($ssh-bp) {
+        justify-content: unset;
+    }
+
     @include breakpoint($hb-bp) {
         padding-left: 3rem;
         padding-right: 3rem;
@@ -24,8 +30,21 @@
         gap: 1rem;
     }
 
+    @include breakpoint($ll_bp) {
+        justify-content: space-around;
+        
+    }
+
 
     .logoContainer {
+
+        @include breakpoint($ssh-bp) {
+            margin-right: 10rem;
+        }
+
+        @include breakpoint($cos_bp) {
+            margin-right: 6rem;
+        }
 
         @include breakpoint($lb-bp) {
             width: 35%;
@@ -53,6 +72,24 @@
             display: flex;
             flex-direction: column;
             gap: 2.1rem;
+
+            @include breakpoint($ssh-bp) {
+                margin-right: 22.2rem;
+            }
+
+            @include breakpoint($mm-bp) {
+                margin-right: 10rem;
+            }      
+
+            @include breakpoint($cos_bp) {
+                margin-right: 15rem;
+            }
+
+            @include breakpoint($ll_bp) {
+                margin-right: 0;
+
+            }
+
 
 
             @include breakpoint($xl-bp) {
@@ -87,6 +124,10 @@
                     text-transform: uppercase;
                     color: #FFFFFF;
                     text-decoration: none;
+                }
+
+                a:hover {
+                    text-decoration: underline;
                 }
             }
         }
@@ -131,6 +172,10 @@
                     }
                 }
 
+                button:hover {
+                    background: linear-gradient(180deg, #DEBF82 0%, #d6b26f 100%);
+                }
+
                 div {
                     a {
                         font-family: "SourceSansPro";
@@ -157,6 +202,10 @@
                     .active {
                         text-decoration: underline;
                         color: #FFFFFF;
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
                     }
                 }
 
@@ -198,6 +247,10 @@
                     @include breakpoint($lb-bp) {
                         font-size: 1.8rem;
                     }
+                }
+
+                .phone:hover {
+                    text-decoration: underline;
                 }
             }
         }
@@ -263,6 +316,10 @@
         @include breakpoint($jb-bp) {
             font-size: 2rem;
         } 
+
+        @include breakpoint($sm-bp) {
+            line-height: 100%;
+        }
     }
 
     a {

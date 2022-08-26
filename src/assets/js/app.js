@@ -21,6 +21,7 @@ let swiper = new Swiper(".mySwiper", {
 
 let productsSlider = new Swiper(".productsSlider", {
     slidesPerView: 1,
+    centeredSlides: true,
     loop: true,
     pagination: {
         el: ".swiper-pagination2",
@@ -83,8 +84,50 @@ cross.addEventListener('click', e => {
     enableScroll()
 })
 
+
+
+let countryNumber = document.querySelectorAll('.countryNumber')
+let geography_item = document.querySelectorAll('.geography_item')
+
+geography_item.forEach((e, i) => {
+    e.dataset.number = i
+    e.addEventListener('mouseenter', togglemenu)
+    e.addEventListener('mouseleave', togglemenu)
+    // e.addEventListener('click', togglemenu)
+})
+function togglemenu() {
+    countryNumber[event.target.dataset.number].classList.toggle('countryNumber__active')
+}
 })
 
+
+// let countryNumber = document.querySelectorAll('.countryNumber')
+// let geography_item = document.querySelectorAll('.geography_item')
+
+// geography_item.forEach((e, i) => {
+    
+
+//     if (window.matchMedia("(min-width: 920px)").matches) {
+//         e.addEventListener('mouseenter', () => {
+//             togglemenu(i)
+//         })
+//         e.addEventListener('mouseleave', () => {
+//             togglemenu(i)
+//         })
+//     }else if (window.matchMedia("(max-width: 920px)").matches) {
+//         e.addEventListener('click', () => {
+//             togglemenu(i)
+//             let countryNumber__active = document.querySelectorAll('.countryNumber__active')
+//             console.log(countryNumber__active.length)
+//             console.log(countryNumber__active)
+//         })
+//     }
+    
+// })
+// function togglemenu(i) {
+//     countryNumber[i].classList.toggle('countryNumber__active')
+// }
+// })
 
 
 
