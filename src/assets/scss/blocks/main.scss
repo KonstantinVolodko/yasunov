@@ -384,9 +384,9 @@
             }
 
 
-            @include breakpoint($lg-bp) {
-                flex-direction: column;
-            }
+            // @include breakpoint($lg-bp) {
+            //     flex-direction: column;
+            // }
 
             @include breakpoint($jb-bp) {
                 padding-left: 3rem;
@@ -409,13 +409,13 @@
             div {
                 display: flex;
                 flex-direction: column;
-                width: 33.33%;
+                // width: 33.33%;
                 align-items: center;
 
-                @include breakpoint($lg-bp) {
-                    width: unset;
-                    flex-direction: unset;
-                }
+                // @include breakpoint($lg-bp) {
+                //     width: unset;
+                //     flex-direction: unset;
+                // }
 
                 div {
                     img {
@@ -629,6 +629,9 @@
         padding-top: 2.6rem;
         padding-bottom: 2.8rem;
 
+        
+
+
         .title {
             font-family: "NeoSansCyrMedium";
             font-size: 2.4rem;
@@ -664,10 +667,38 @@
             width: min-content;
             margin: 0 auto;
 
+            .showCountry {
+                position: absolute;
+                line-height: 3rem;
+                transition: all 0.3s;
+                color: #00372E;
+                font-family: "SourceSansPro";
+                font-size: 2rem;
+                top: 29%;
+                left: -22%;
+
+                @media (max-width: 1650px) {
+                    left: -14%;
+                }
+
+                @media (max-width: 1454px) {
+                    left: -10%;
+                }
+
+                @media (max-width: 1400px) {
+                    left: 77%;
+                    top: 49%;
+                }
+
+                @media (max-width: 1024px) {
+                    display: none;
+                }
+            }
+
             .Aravia {
                 position: absolute;
-                left: 24.7%;
-                top: 41.7%;
+                left: 25.3%;
+                top: 41.74%;
                 width: 10.3%;
 
                 &:hover {
@@ -682,9 +713,9 @@
 
             .Russia {
                 position: absolute;
-                top: 3.9%;
-                left: 21.5%;
-                width: 77%;
+                top: 4.1%;
+                left: 22%;
+                width: 77.4%;
 
                 &:hover {
                     transform: scale(1.03);
@@ -697,8 +728,8 @@
 
             .Belarus {
                 position: absolute;
-                left: 19.4%;
-                top: 22%;
+                left: 19.8%;
+                top: 21.9%;
                 width: 4.8%;
                 
 
@@ -729,7 +760,7 @@
             .Germany {
                 position: absolute;
                 top: 22.7%;
-                left: 11.3%;
+                left: 11.6%;
                 width: 4.6%;
 
                 &:hover {
@@ -743,8 +774,8 @@
 
             .Chezh {
                 position: absolute;
-                top: 26.1%;
-                left: 14.4%;
+                top: 26%;
+                left: 14.6%;
                 width: 3.4%;
 
                 &:hover {
@@ -758,8 +789,8 @@
 
             .Italy {
                 position: absolute;
-                top: 29.3%;
-                left: 11.6%;
+                top: 29.4%;
+                left: 11.8%;
                 width: 6%;
 
                 &:hover {
@@ -773,8 +804,8 @@
 
             .Armenya {
                 position: absolute;
-                top: 33.5%;
-                left: 29.8%;
+                top: 33.6%;
+                left: 30.27%;
                 width: 2.9%;
 
                 &:hover {
@@ -789,7 +820,7 @@
             .Gruzia {
                 position: absolute;
                 top: 32%;
-                left: 27.1%;
+                left: 27.75%;
                 width: 3.6%;
             
 
@@ -805,7 +836,7 @@
             .Turkey {
                 position: absolute;
                 top: 33.4%;
-                left: 20.8%;
+                left: 21.2%;
                 width: 9.2%;
 
                 &:hover {
@@ -819,8 +850,8 @@
 
             .Irac {
                 position: absolute;
-                top: 37.4%;
-                left: 26.9%;
+                top: 37.27%;
+                left: 27.3%;
                 width: 5%;
 
                 &:hover {
@@ -836,7 +867,7 @@
                 position: absolute;
                 top: 46.2%;
                 width: 2.8%;
-                left: 32.9%;
+                left: 33.5%;
 
                 &:hover {
                     transform: scale(1.2);
@@ -849,8 +880,8 @@
 
             .Iordania {
                 position: absolute;
-                top: 40.5%;
-                left: 25%;
+                top: 40.6%;
+                left: 25.5%;
                 width: 2.3%;
                 &:hover {
                     transform: scale(1.2);
@@ -863,7 +894,7 @@
 
             .Eagypt {
                 position: absolute;
-                left: 20.2%;
+                left: 20.6%;
                 top: 42%;
                 width: 5.4%;
 
@@ -878,8 +909,8 @@
 
             .China {
                 position: absolute;
-                left: 43.2%;
-                top: 24%;
+                left: 44%;
+                top: 24.29%;
                 width: 29.2%;
 
                 &:hover {
@@ -893,8 +924,8 @@
 
             .ShriLanka {
                 position: absolute;
-                top: 59.9%;
-                left: 46.2%;
+                top: 60.5%;
+                left: 46.9%;
                 width: 1.3%;
 
                 &:hover {
@@ -908,8 +939,8 @@
 
             .Malayzia {
                 position: absolute;
-                top: 62.4%;
-                left: 55.9%;
+                top: 62.5%;
+                left: 56.7%;
                 width: 9.3%;
 
                 &:hover {
@@ -1021,6 +1052,7 @@
             .countryNumber__active {
                 transition: all 0.3s;
                 color: #00372E;
+                // color: black;
                 font-family: "SourceSansPro";
                 font-size: 2rem;
             }
