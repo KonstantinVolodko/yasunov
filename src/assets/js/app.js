@@ -84,6 +84,7 @@ cross.addEventListener('click', e => {
 
 
 let countryNumber = document.querySelectorAll('.countryNumber')
+let countryNumber2 = document.querySelectorAll('.country')
 let geography_item = document.querySelectorAll('.geography_item')
 let showCountry = document.querySelector('.showCountry')
 
@@ -95,12 +96,12 @@ geography_item.forEach((e, i) => {
 })
 function togglemenu() {
 
-    if (window.matchMedia("(max-width: 1024px)").matches) {
+    if (window.matchMedia("(max-width: 850px)").matches) {
         countryNumber[event.target.dataset.number].classList.toggle('countryNumber__active')
     }else {
             // countryNumber[event.target.dataset.number].innerHTML.
             let elem = document.createElement('div')
-            elem.innerHTML = `${countryNumber[event.target.dataset.number].innerHTML}`
+            elem.innerHTML = `${countryNumber2[event.target.dataset.number].innerHTML}`
             elem.classList.add('ident')
             showCountry.appendChild(elem)
 

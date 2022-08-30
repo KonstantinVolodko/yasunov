@@ -257,6 +257,7 @@
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
+                text-decoration: none;
 
                 cursor: pointer;
                 
@@ -652,6 +653,8 @@
             text-align: center;
             color: #606060;
             margin-bottom: 4rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
 
             @include breakpoint($jb-bp) {
                 font-size: 1.6rem;
@@ -669,11 +672,12 @@
 
             .showCountry {
                 position: absolute;
-                line-height: 3rem;
+                line-height: 5rem;
                 transition: all 0.3s;
                 color: #00372E;
                 font-family: "SourceSansPro";
-                font-size: 2rem;
+                font-size: 5rem;
+                width: 40rem;
                 top: 29%;
                 left: -22%;
 
@@ -691,6 +695,11 @@
                 }
 
                 @media (max-width: 1024px) {
+                    font-size: 4rem;
+                    width: 20rem;
+                }
+
+                @media (max-width: 850px) {
                     display: none;
                 }
             }
