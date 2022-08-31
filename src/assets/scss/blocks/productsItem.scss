@@ -1,42 +1,25 @@
-.products {
+.productsItem {
     background: url(../images/main/backgroundElement3.png) left bottom no-repeat, url(../images/main/backgroundElem4.png) right top no-repeat;
-    padding-bottom: 15.3rem;
+    padding-bottom: 18.5rem;
 
-        .title {
-            font-size: 2.4rem;
-            line-height: 4.4rem;
-            text-align: center;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            color: #065749;
-            padding-top: 3.1rem;
-            font-family: "NeoSansCyrRegular";
-        }
-    
-        .subtitle {
-            font-size: 2.4rem;
-            line-height: 3.2rem;
-            text-align: center;
-            letter-spacing: 0.03em;
-            color: #000000;
-            mix-blend-mode: multiply;
-            font-family: "SourceSansPro";
-            padding-left: 21.5rem;
-            padding-right: 21.5rem;
-
-            @include breakpoint($xl-bp) {
-                padding-left: 1rem;
-                padding-right: 1rem;
-            }
-        }
+    .title {
+        font-size: 2.4rem;
+        line-height: 4.4rem;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #065749;
+        padding-top: 3.1rem;
+        font-family: "NeoSansCyrRegular";
+    }
 
         .navContainer {
             display: flex;
             padding-left: 15.5rem;
             padding-right: 15.5rem;
             justify-content: space-between;
-            margin-top: 5.5rem;
-            padding-bottom: 5.6rem;
+            padding-bottom: 8.1rem;
+            margin-top: 5.3rem;
 
             
             @include breakpoint($xl-bp) {
@@ -105,50 +88,63 @@
                 color: #00372E;
             }
         }
+    
+    .contentContainer {
+        display: flex;
+        gap: 13rem;
+        align-items: center;
+        justify-content: center;
 
-        .contentContainer {
-            display: flex;
-            justify-content: center;
-            // padding-left: 18.2rem;
-            // padding-right: 18.2rem;
+        @include breakpoint($ssh-bp) {
+            justify-content: unset;
+            padding-left: 15.5rem;
+        }
+
+        @include breakpoint($xl-bp) {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        @include breakpoint($mb-bp) {
+            gap: 3rem;
             flex-wrap: wrap;
-            column-gap: 9rem;
-            row-gap: 6.3rem;
-            .productItem {
-                text-decoration: none;
-                width: 23%;
+            justify-content: center;
+        }
 
-                @include breakpoint($mb-bp) {
-                    width: 43%;
-                }
+        .imgContainer {
 
-                @include breakpoint($sm-bp) {
-                    width: 95%;
-                }
+            img {
+                width: 100%;
+            }
+        }
 
-                .imgContainer {
-                    img {
-                        width: 100%;
-                    }
-                }
+        .textContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 2.8rem;
 
-                .text {
-                    font-family: 'Roboto';
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 2rem;
-                    line-height: 2.5rem;
-                    text-align: center;
-                    color: #606060;
-                    
-                }
+            
+            .title {
+                font-family: "SourceSansPro";
+                font-size: 3.2rem;
+                line-height: 4.4rem;
+                color: #065749;
+                text-align: start;
             }
 
-            .productItem:hover {
-                img {
-                    transform: scale(1.05);
-                    transition: all 0.3s;
+            .subtitle {
+                p {
+                    font-family: "SourceSansPro2";
+                    font-size: 1.6rem;
+                    line-height: 2.8rem;
+                    color: #606060;
+                }
+
+                span {
+                    font-family: "SourceSansPro";
+                    color: #000000;
                 }
             }
         }
+    }
 }

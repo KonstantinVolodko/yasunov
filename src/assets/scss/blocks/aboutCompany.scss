@@ -20,6 +20,10 @@
         text-transform: uppercase;
         color: #FFFFFF;
 
+        @include breakpoint($xl-bp) {
+            padding-left: 1rem;
+        }
+
         a {
             font-family: "SourceSansPro2";
             font-size: 1.4rem;

@@ -23,6 +23,17 @@
         font-family: "NeoSansCyrMedium";
         padding-left: 21.5rem;
         padding-right: 21.5rem;
+
+        @include breakpoint($cos_bp) {
+            padding-right: 2rem;
+            padding-left: 2rem;
+        }
+
+        @include breakpoint($xl-bp) {
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+
     }
 
 
@@ -34,14 +45,45 @@
         padding-right: 19.5rem;
         margin-top: 5.3rem;
         padding-bottom: 4rem;
+
+        @include breakpoint($cos_bp) {
+            padding-right: 2rem;
+            padding-left: 2rem;
+        }
+
+        @include breakpoint($xl-bp) {
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+
         .item {
             display: flex;
             gap: 9.2rem;
+            
+
+            @include breakpoint($cos_bp) {
+                gap: 4.2rem;
+            }
+
+            @include breakpoint($xl-bp) {
+                flex-wrap: wrap;
+
+            .imgContainer {
+                width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            }
+
+            
+
+            
 
             .title {
                 padding-top: 0rem;
                 font-size: 2.4rem;
-                line-height: 1.6rem;
+                line-height: 2.6rem;
                 color: #065749;
                 text-align: inherit;
                 font-family: "SourceSansPro";
