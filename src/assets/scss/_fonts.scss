@@ -5,10 +5,19 @@
   font-style: normal;
 }
 
+
+
 @font-face {
   font-family: "NeoSansCyrLight";
   src: url("../fonts/NeoSansCyr-LIght.woff") format("woff");
   font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NeoSansCyrLight2";
+  src: url("../fonts/NeoSansCyr-LIght.woff") format("woff");
+  font-weight: bold;
   font-style: normal;
 }
 

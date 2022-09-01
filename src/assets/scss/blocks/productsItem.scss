@@ -10,7 +10,7 @@
         text-transform: uppercase;
         color: #065749;
         padding-top: 3.1rem;
-        font-family: "NeoSansCyrRegular";
+        font-family: "NeoSansCyrMedium";
     }
 
         .navContainer {
@@ -133,6 +133,9 @@
             }
 
             .subtitle {
+                display: flex;
+                flex-direction: column;
+                gap: 0.4rem;
                 p {
                     font-family: "SourceSansPro2";
                     font-size: 1.6rem;

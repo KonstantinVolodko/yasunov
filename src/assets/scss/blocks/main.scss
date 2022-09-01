@@ -506,6 +506,7 @@
             display: flex;
             flex-direction: column;
             gap: 2.1rem;
+            
 
             @include breakpoint($xl-bp) {
                 padding-left: 8rem;
@@ -536,6 +537,7 @@
                 }
 
                 input {
+                    font-family: "NeoSansCyrRegular";
                     font-size: 1.6rem;
                     line-height: 2.2rem;
                     display: flex;
@@ -564,6 +566,7 @@
             }
 
             button {
+                font-family: "NeoSansCyrRegular";
                 width: max-content;
                 font-size: 1.8rem;
                 line-height: 2.5rem;
@@ -677,17 +680,15 @@
                 color: #00372E;
                 font-family: "SourceSansPro";
                 font-size: 5rem;
-                width: 40rem;
+                width: min-content;
                 top: 29%;
                 left: -22%;
 
                 @media (max-width: 1650px) {
-                    left: -14%;
+                    left: 77%;
+                    top: 49%;
                 }
 
-                @media (max-width: 1454px) {
-                    left: -10%;
-                }
 
                 @media (max-width: 1400px) {
                     left: 77%;

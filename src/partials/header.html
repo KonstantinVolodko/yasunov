@@ -37,10 +37,10 @@
         <div class="contactsContainer">
             <div class="languageContainer">
                 <div>
-                    <a class="active" href="">ru</a>
-                    <a href="">eng</a>
+                    <a class="active" href="#">ru</a>
+                    <a href="#">eng</a>
                 </div>
-                <button>
+                <button data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <div>Сотрудничать</div>
                     <svg>
                         <use href="#arrowUpIco"></use>
@@ -81,4 +81,44 @@
    
     
 </div>
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="closeContainer">
+            <button data-bs-dismiss="modal" aria-label="Close">
+                <svg>
+                    <use href="#crossIco"></use>
+                </svg>
+            </button>
+        </div>
+          
+        <div class="modal-body">
+            <form action="#">
+                <input type="text" placeholder="Ваше имя">
+
+                <input type="email" placeholder="Ваш телефон или электронная почта">
+
+                <input type="text" placeholder="Ваш вопрос">
+
+                <div class="licenceContainer">
+                    <div class="licence">
+                        <p>Нажимая на кнопку, я даю <a href="#">согласие <br> на обработку персональных данных</a></p>
+                    </div>
+                    
+                    <button type="submit">
+                        <div>Отправить</div>
+                        <svg>
+                            <use href="#arrowUpIco"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
 

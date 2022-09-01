@@ -153,6 +153,8 @@
 
                 button {
                     background: linear-gradient(180deg, #DEBF82 0%, #B7975A 100%);
+                    font-family: "NeoSansCyrRegular";
+                    font-weight: 400;
                     font-size: 1.8rem;
                     line-height: 2.5rem;
                     text-align: center;
@@ -380,5 +382,101 @@
         width: 3rem;
         height: 3rem;
         fill: #FFFFFF;
+    }
+}
+
+
+.closeContainer {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding-right: 1rem;
+    padding-top: 1rem;
+
+    button {
+        border: none;
+        background: none;
+        
+        svg {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    input {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        display: flex;
+        align-items: center;
+        color: rgba(96, 96, 96, 0.7);
+        font-family: "NeoSansCyrRegular";
+        padding-left: 1.5rem;
+        padding-top: 1.3rem;
+        padding-bottom: 1.7rem;
+        
+    }
+
+    input:focus {
+        outline: 0.3rem solid #008B73;
+    }
+
+    .licenceContainer {
+        display: flex;
+        gap: 3.2rem;
+        justify-content: space-between;
+
+        @include breakpoint($sm-bp) {
+            flex-wrap: wrap;
+            justify-content: start;
+        }
+
+        .licence {
+
+
+
+            p {
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.3rem;
+                line-height: 1.5rem;
+                color: #878787;
+                a {
+                    text-decoration-line: underline;
+                    color: #393246;
+                }
+            }
+        }
+
+        
+
+        button {
+            background: linear-gradient(180deg, #DEBF82 0%, #B7975A 100%);
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            text-align: center;
+            color: #00372E;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: none;
+            filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.5));
+
+            @include breakpoint($lb-bp) {
+                font-size: 1.5rem;
+            }
+
+            svg {
+                fill: transparent;
+                width: 1.6rem;
+                height: 1.6rem;
+            }
+        }
     }
 }

@@ -73,6 +73,11 @@
             font-family: "NeoSansCyrMedium";
             padding-left: 21.5rem;
             padding-right: 21.5rem;
+
+            @include breakpoint($xl-bp) {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
         }
     
         .contentContainer {
@@ -81,6 +86,10 @@
             flex-direction: column;
             gap: 8.8rem;
             padding-bottom: 14.7rem;
+
+            @include breakpoint($mb-bp) {
+                gap: 4rem;
+            }
     
             .item {
                 display: flex;
@@ -88,6 +97,22 @@
                 padding-right: 22.2rem;
                 gap: 4.5rem;
                 align-items: center;
+
+                @include breakpoint($xl-bp) {
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                }
+
+                @include breakpoint($mb-bp) {
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+
+                // .dateImg {
+                //     display: flex;
+                //     align-items: center;
+                //     gap: 4.3rem;
+                // }
             }
     
             .date {
