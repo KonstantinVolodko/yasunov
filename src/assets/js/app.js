@@ -4,9 +4,29 @@ document.addEventListener("DOMContentLoaded", () => {
 //= components/
 
 
+if (window.matchMedia("(min-width: 780px)").matches) {
+    let header = $('.header'),
+		scrollPrev = 0;
+
+    $(window).scroll(function() {
+        let scrolled = $(window).scrollTop();
+    
+        if ( scrolled > 100 && scrolled > scrollPrev ) {
+            header.addClass('hide11');
+        } else {
+            header.removeClass('hide11');
+        }
+        scrollPrev = scrolled;
+    });
+}
+
+
+
+
 let swiper = new Swiper(".mySwiper", {
 
     loop: true,
+    autoplay: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -23,6 +43,7 @@ let productsSlider = new Swiper(".productsSlider", {
     slidesPerView: 1,
     centeredSlides: true,
     loop: true,
+    autoplay: true,
     pagination: {
         el: ".swiper-pagination2",
         clickable: true,

@@ -4,7 +4,7 @@
     flex-direction: column;
     padding-left: 10rem;
     padding-right: 10rem;
-    background: url(../images/main/backgroundElement1.png) bottom left no-repeat, url(../images/main/backgroundElement2.png) top right no-repeat, linear-gradient(180deg, #12A58A 0%, #00634F 100%);
+    background: url(../images/main/bgElem7.png) bottom left no-repeat, url(../images/main/bgElem8.png) top right no-repeat, linear-gradient(180deg, #12A58A 0%, #00634F 100%);
     padding-top: 2.9rem;
     padding-bottom: 1.2rem;
 
@@ -50,6 +50,8 @@
             }
             
             a {
+                font-style: normal;
+                font-weight: 400;
                 font-size: 1.8rem;
                 line-height: 2.2rem;
                 text-align: center;
@@ -57,12 +59,19 @@
                 text-transform: uppercase;
                 color: #FFFFFF;
                 text-decoration: none;
-                
+                font-family: "NeoSansCyrRegular";
+                // text-shadow: 1px 2px 2px rgb(0 0 0 / 50%);
+                text-shadow: 0.4rem 0.5rem 0.4rem rgb(0 0 0 / 40%);
             }
 
             a:hover {
-                text-decoration: underline;
+                color: #D9BE8C;
+                transition: linear 0.2s;
             }
+
+            // a:visited  {
+            //     color: #D9BE8C;
+            // }
         }
 
         .helpContainer {
@@ -70,6 +79,42 @@
 
             .btnContainer {
                 padding-top: 1.3rem;
+
+                button {
+                    background: linear-gradient(180deg, #DEBF82 0%, #B7975A 100%);
+                    font-family: "NeoSansCyrRegular";
+                    font-weight: 400;
+                    font-size: 1.8rem;
+                    line-height: 2.5rem;
+                    text-align: center;
+                    color: #00372E;
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    border: none;
+                    filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.5));
+                    
+
+                    @include breakpoint($lb-bp) {
+                        font-size: 1.5rem;
+                    }
+
+                    svg {
+                        fill: transparent;
+                        width: 1.6rem;
+                        height: 1.6rem;
+                    }
+                }
+
+                button:hover {
+                    transition: linear 0.3s;
+                    // background: #c0a063;
+                    opacity: 0.95;
+                }
+
+                button:active {
+                    filter: none;
+                }
             }
         }
 
@@ -104,7 +149,12 @@
                 }
 
                 .number:hover {
-                    text-decoration: underline;
+                    color: #D9BE8C;
+                    transition: linear 0.2s;
+                }
+
+                .number:visited  {
+                    color: #D9BE8C;
                 }
 
                 .emailContainer {

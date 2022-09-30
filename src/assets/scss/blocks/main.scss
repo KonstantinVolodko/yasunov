@@ -1,7 +1,55 @@
+.upBtn {
+    font-family: NeoSansCyrRegular;
+    font-size: 1.5rem;
+    line-height: 1rem;
+    text-align: center;
+    letter-spacing: .03em;
+    color: #fff;
+    text-shadow: 0.4rem 0.5rem 0.4rem rgb(0 0 0 / 40%);
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    text-decoration: none;
+    z-index: 4;
+    border-radius: 50%;
+    background-color: #00372E;
+    width: 10rem;
+    height: 10rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    animation: pulse 2.5s linear infinite;
+
+    @include breakpoint($srm-bp) {
+        display: flex;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+}
+
+.upBtn:hover {
+    color: #D9BE8C;
+    transition: linear 0.2s;
+}
+
 .main {
     font-family: "NeoSansCyrLight";
 
     .firstSliderBlock {
+        margin-top: 0.3rem;
+
+        background: #ffe4bf;
 
         .mySwiper {
 
@@ -64,7 +112,7 @@
         width: 100%;
         border-bottom: 0.2rem solid #043930;
         box-shadow: 0px 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
-        background: url(../images/main/backgroundElement1.png) bottom left no-repeat, url(../images/main/backgroundElement2.png) top right no-repeat, linear-gradient(180deg, #12A58A 0%, #00634F 100%);
+        background: url(../images/main/bgElem1.png) bottom left no-repeat, url(../images/main/bgElem2.png) top right no-repeat, linear-gradient(180deg, #12A58A 0%, #00634F 100%);
 
         @include breakpoint($hb-bp) {
             padding-left: 8rem;
@@ -121,7 +169,8 @@
                 text-align: center;
                 letter-spacing: 0.03em;
                 color: #FFFFFF;
-                text-shadow: 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.4);
+                // text-shadow: 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.4);
+                text-shadow: 0.4rem 0.5rem 0.4rem rgb(0 0 0 / 40%);
 
                 @include breakpoint($xl-bp) {
                     font-size: 2.6rem;
@@ -142,8 +191,9 @@
                 line-height: 2.2rem;
                 text-align: center;
                 color: #D9BE8C;
-                text-shadow: 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.4);
+                // text-shadow: 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.4);
                 text-align: center;
+                text-shadow: 0.4rem 0.5rem 0.4rem rgb(0 0 0 / 40%);
 
                 @include breakpoint($xl-bp) {
                     font-size: 1.8rem;
@@ -294,7 +344,7 @@
         width: 100%;
         border-bottom: 0.2rem solid #043930;
         box-shadow: 0px 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
-        background: url(../images/main/backgroundElement1.png) bottom left no-repeat, url(../images/main/backgroundElement2.png) top right no-repeat, linear-gradient(180deg, #12A58A 0%, #00634F 100%);
+        background: url(../images/main/bgElem3.png) bottom left no-repeat, url(../images/main/bgElem4.png) top right no-repeat, linear-gradient(180deg, #12A58A 0%, #00634F 100%);
         padding-top: 2rem;
         padding-bottom: 1.6rem;
 
@@ -327,7 +377,8 @@
             letter-spacing: 0.03em;
             text-transform: uppercase;
             color: #FFFFFF;
-            text-shadow: 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.4);
+            // text-shadow: 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.4);
+            text-shadow: 0.4rem 0.5rem 0.4rem rgb(0 0 0 / 40%);
 
             @include breakpoint($jb-bp) {
                 font-size: 1.8rem;
@@ -403,8 +454,9 @@
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-                
             }
+
+
             
 
             div {
@@ -419,6 +471,8 @@
                 // }
 
                 div {
+                    
+
                     img {
                         @include breakpoint($lg-bp) {
                             width: 100%;
@@ -457,13 +511,17 @@
                     }
                 }
             }
+
+            .secContent {
+                width: 53%;
+            }
         }
     }
 
     .formContainer {
         border-bottom: 0.2rem solid #043930;
         box-shadow: 0px 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
-        background: url(../images/main/backgroundElement1.png) bottom left no-repeat, url(../images/main/backgroundElement2.png) top right no-repeat, linear-gradient(180deg, #12A58A 0%, #00634F 100%);
+        background: url(../images/main/bgElem5.png) bottom left no-repeat, url(../images/main/bgElem6.png) top right no-repeat, linear-gradient(180deg, #12A58A 0%, #00634F 100%);
         padding-top: 0.8rem;
         padding-bottom: 2.2rem;
         
@@ -476,7 +534,8 @@
             letter-spacing: 0.03em;
             text-transform: uppercase;
             color: #FFFFFF;
-            text-shadow: 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.4);
+            // text-shadow: 0.1rem 0.2rem 0.1rem rgba(0, 0, 0, 0.4);
+            text-shadow: 0.4rem 0.5rem 0.4rem rgb(0 0 0 / 40%);
 
             @include breakpoint($jb-bp) {
                 font-size: 2rem;
@@ -489,7 +548,21 @@
 
         .subtitle {
             font-size: 1.8rem;
-            line-height: 2.5rem;
+            // .second {
+            //     width: 69%;
+            // }
+
+            // .first {
+            //     width: 77%;
+            // }
+
+            // .four {
+            //     width: 95%;
+            // }
+
+            // .fourTitle {
+            //     width: 120%;
+            // }            line-height: 2.5rem;
             text-align: center;
             color: #FFFFFF;
 
@@ -530,6 +603,7 @@
                 gap: 1.7rem;
                 justify-content: center;
                 margin-top: 1.8rem;
+                flex-wrap: wrap;
 
                 @include breakpoint($xl-bp) {
                     flex-direction: column;
@@ -594,7 +668,13 @@
             }
 
             button:hover {
-                background: linear-gradient(180deg, #DEBF82 0%, #d6b26f 100%);
+                transition: linear 0.3s;
+                // background: #c0a063;
+                opacity: 0.95;
+            }
+
+            button:active {
+                filter: none;
             }
 
             .licence {
