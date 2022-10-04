@@ -82,7 +82,7 @@
             gap: 2.1rem;
 
             @include breakpoint($ssh-bp) {
-                margin-right: 22.2rem;
+                margin-right: 18.2rem;
             }
 
             @include breakpoint($mm-bp) {
@@ -112,9 +112,11 @@
                 line-height: 2.4rem;
                 letter-spacing: 0.01em;
                 color: #D9BE8C;
+                font-family: "NeoSansCyrRegular";
     
                 // text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.5);
-                text-shadow: 0.4rem 0.5rem 0.4rem rgb(0 0 0 / 40%);
+                text-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5);
+                // text-shadow: 0.3rem 0.3rem 0.1rem rgba(0, 0, 0, 0.5);
 
                 
             }
@@ -134,9 +136,10 @@
                     text-transform: uppercase;
                     color: #FFFFFF;
                     text-decoration: none;
-                    font-family: "NeoSansCyrRegular";
+                    font-family: "SourceSansPro";
                     // text-shadow: 1px 2px 2px rgb(0 0 0 / 50%);
-                    text-shadow: 0.4rem 0.5rem 0.4rem rgb(0 0 0 / 40%);
+                    // text-shadow: 0.4rem 0.5rem 0.4rem rgb(0 0 0 / 40%);
+                    text-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5);
                 }
 
                 a:hover {
@@ -163,13 +166,24 @@
                 display: flex;
                 gap: 1.5rem;
 
+                div {
+
+                    a {
+                        text-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5);
+                    }
+                    .active {
+                        text-shadow: none;
+                        filter: drop-shadow(0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5));
+                    }
+                }
+
                 @include breakpoint($sm-bp) {
                     justify-content: space-between;
                 }
 
                 button {
                     background: linear-gradient(180deg, #DEBF82 0%, #B7975A 100%);
-                    font-family: "NeoSansCyrRegular";
+                    
                     font-weight: 400;
                     font-size: 1.8rem;
                     line-height: 2.5rem;
@@ -179,7 +193,8 @@
                     align-items: center;
                     gap: 0.5rem;
                     border: none;
-                    filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.5));
+                    filter: drop-shadow(0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5));
+                    font-family: "NeoSansCyrRegular";
                     
 
                     @include breakpoint($lb-bp) {
@@ -195,8 +210,9 @@
 
                 button:hover {
                     transition: linear 0.3s;
+                    filter: drop-shadow(0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5));
                     // background: #c0a063;
-                    opacity: 0.95;
+                    // opacity: 0.95;
                 }
 
                 button:active {
@@ -254,6 +270,8 @@
                     gap: 0.7rem;
                     a {
                         cursor: pointer;
+                        filter: drop-shadow(0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5));
+                        
 
                         svg {
                             width: 1.9rem;
@@ -269,8 +287,9 @@
                     font-size: 2.2rem;
                     line-height: 2.5rem;
                     color: #FFFFFF;
-                    font-family: "SourceSansPro";
+                    font-family: "NeoSansCyrRegular";
                     text-decoration: none;
+                    text-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5);
 
                     @include breakpoint($lb-bp) {
                         font-size: 1.8rem;
@@ -437,6 +456,17 @@ form {
     flex-direction: column;
     gap: 2rem;
 
+    .modalTitle {
+        font-style: normal;
+        font-family: "NeoSansCyrMedium";
+        font-size: 2.4rem;
+        line-height: 4.4rem;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #065749;
+    }
+
     input {
         font-size: 1.6rem;
         line-height: 2.2rem;
@@ -494,7 +524,7 @@ form {
             align-items: center;
             gap: 0.5rem;
             border: none;
-            filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.5));
+            filter: drop-shadow(0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5));
 
             @include breakpoint($lb-bp) {
                 font-size: 1.5rem;

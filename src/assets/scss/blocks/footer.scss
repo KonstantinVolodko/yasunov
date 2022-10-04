@@ -4,7 +4,7 @@
     flex-direction: column;
     padding-left: 10rem;
     padding-right: 10rem;
-    background: url(../images/main/bgElem7.png) bottom left no-repeat, url(../images/main/bgElem8.png) top right no-repeat, linear-gradient(180deg, #12A58A 0%, #00634F 100%);
+    background: url(../images/main/bg7elem.png) bottom left no-repeat, url(../images/main/bg8elem.png) top right no-repeat, linear-gradient(180deg, #12A58A 0%, #00634F 100%);
     padding-top: 2.9rem;
     padding-bottom: 1.2rem;
 
@@ -61,7 +61,8 @@
                 text-decoration: none;
                 font-family: "NeoSansCyrRegular";
                 // text-shadow: 1px 2px 2px rgb(0 0 0 / 50%);
-                text-shadow: 0.4rem 0.5rem 0.4rem rgb(0 0 0 / 40%);
+                // text-shadow: 0.4rem 0.5rem 0.4rem rgb(0 0 0 / 40%);
+                text-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5);
             }
 
             a:hover {
@@ -92,7 +93,7 @@
                     align-items: center;
                     gap: 0.5rem;
                     border: none;
-                    filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.5));
+                    filter: drop-shadow(0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5));
                     
 
                     @include breakpoint($lb-bp) {
@@ -108,8 +109,7 @@
 
                 button:hover {
                     transition: linear 0.3s;
-                    // background: #c0a063;
-                    opacity: 0.95;
+                    filter: drop-shadow(0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5));
                 }
 
                 button:active {
@@ -128,10 +128,14 @@
                 padding-top: 1rem;
 
                 div {
-                    font-family: "SourceSansPro";
+                    font-family: "NeoSansCyrRegular";
                     display: flex;
                     align-items: center;
                     gap: 0.3rem;
+
+                    a {
+                        filter: drop-shadow(0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5));
+                    }
                     
                 }
                 
@@ -142,6 +146,8 @@
                     color: #FFFFFF;
                     padding-left: 0.8rem;
                     text-decoration: none;
+                    text-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5);
+                    filter: none;
 
                     @include breakpoint($jb-bp) {
                         font-size: 2rem;
@@ -161,6 +167,10 @@
                     display: flex;
                     gap: 1.3rem;
                     padding-left: 2rem;
+
+                    div {
+                        filter: drop-shadow(0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5));
+                    }
                     
                 }
 
@@ -207,7 +217,7 @@
             gap: 0.5rem;
             background: linear-gradient(180deg, #DEBF82 0%, #B7975A 100%);
             border: none;
-            filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.5));
+            filter: drop-shadow(0.1rem 0.2rem 0.2rem rgba(0, 0, 0, 0.5));
             height: max-content;
             margin-left: 2.6rem;
             
@@ -225,7 +235,7 @@
         }
 
         button:hover {
-            background: linear-gradient(180deg, #DEBF82 0%, #d6b26f 100%);
+            filter: drop-shadow(0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.5));
         }
     }
 
@@ -235,6 +245,7 @@
         justify-content: space-between;
         align-items: center;
         margin-top: 2rem;
+        font-family: "NeoSansCyrRegular";
 
         @include breakpoint($lb-bp) {
             flex-direction: column;
