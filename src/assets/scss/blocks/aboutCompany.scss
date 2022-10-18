@@ -1,24 +1,4 @@
 .underHeader {
-    // .upperContainer {
-    //     // img {
-    //     //     width: 100%;
-    //     // }
-
-    //     background-image: url(../images/aboutCompany/yasynov_slider1.png);
-
-    //     /* высота прокрутки картинки */
-    //     min-height: 50rem; 
-    
-    //     /* привязываем фоновую картинку, чтобы она не двигалась */
-    //     background-attachment: fixed;
-    //     /* размещаем её по центру */
-    //     background-position: center;
-    //     /* выключаем повторения картинки */
-    //     background-repeat: no-repeat;
-    //     /* подгоняем масштаб картинки под размер блока, в котором она лежит */
-    //     background-size: cover;
-    // }
-
     .upperContainer {
         margin-top: 10rem;
         @include breakpoint($srm-bp) {
@@ -133,11 +113,6 @@
                     gap: 1rem;
                 }
 
-                // .dateImg {
-                //     display: flex;
-                //     align-items: center;
-                //     gap: 4.3rem;
-                // }
             }
     
             .date {
