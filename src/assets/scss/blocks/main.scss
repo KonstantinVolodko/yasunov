@@ -1,3 +1,81 @@
+#myBtn {
+    display: none;
+}
+
+.modal-content {
+    width: 40%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.okBtn {
+    border: none;
+    background: linear-gradient(180deg, #DEBF82 0%, #B7975A 100%);
+    font-family: 'Neo Sans Pro Cyr';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #606060;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.declineBtn {
+    border: none;
+    font-family: 'Neo Sans Pro Cyr';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #606060;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.cookieText {
+    font-family: 'Neo Sans Pro Cyr';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: #606060;
+}
+
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; /* Оставаться на месте */
+    z-index: 111111; /* Сидеть на вершине */
+    padding-top: 100px; /* Расположение коробки */
+    left: 0;
+    top: 0;
+    width: 100%; /* Полная ширина */
+    height: 100%; /* Полная высота */
+    overflow: auto; /* Включите прокрутку, если это необходимо */
+    background-color: rgb(0,0,0); /* Цвет запасной вариант  */
+    background-color: rgba(0,0,0,0.4); /*Черный с непрозрачностью */
+  }
+  
+  /* Кнопка закрытия */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
 .upBtn {
     font-family: NeoSansCyrRegular;
     font-size: 1.5rem;
@@ -47,9 +125,16 @@
     font-family: "NeoSansCyrLight";
 
     .firstSliderBlock {
+        
+        
         margin-top: 0.3rem;
+        margin-top: 10rem;
 
         background: #ffe4bf;
+
+        @include breakpoint($srm-bp) {
+            margin-top: 0rem;
+        }
 
         .mySwiper {
 
@@ -277,6 +362,10 @@
             margin-left: 18.2rem;
             margin-right: 18.2rem;
 
+            img {
+                width: 35.2rem;
+            }
+
 
             @include breakpoint($cos_bp) {
                 margin-left: 10rem;
@@ -430,6 +519,14 @@
             gap: 3rem;
 
             div {
+                
+
+                img {
+                    // width: 25rem;
+                    // border-radius: 2rem;
+                    width: 32rem;
+                    border-radius: 2rem;
+                }
 
                 div:hover {
                     
@@ -446,7 +543,7 @@
                 padding-right: 8rem;
             }
 
-            @include breakpoint($bm-bp) {
+            @include breakpoint($cos_bp) {
                 flex-wrap: wrap;
                 justify-content: center;
             }

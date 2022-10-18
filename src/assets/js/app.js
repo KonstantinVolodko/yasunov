@@ -135,36 +135,51 @@ function togglemenu() {
     
     
 }
+
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+let okBtn = document.querySelector('.okBtn')
+
+let declineBtn = document.querySelector('.declineBtn')
+
+
+
+// When the user clicks the button, open the modal 
+// btn.onclick = function() {
+//   modal.style.display = "block";
+// }
+
+// When the user clicks on <span> (x), close the modal
+// span.onclick = function() {
+//   modal.style.display = "none";
+// }
+
+okBtn.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  declineBtn.onclick = function() {
+    modal.style.display = "none";
+  }
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+window.onload = function() {
+    modal.style.display = "block";
+  };
+
 })
 
-
-// let countryNumber = document.querySelectorAll('.countryNumber')
-// let geography_item = document.querySelectorAll('.geography_item')
-
-// geography_item.forEach((e, i) => {
-    
-
-//     if (window.matchMedia("(min-width: 920px)").matches) {
-//         e.addEventListener('mouseenter', () => {
-//             togglemenu(i)
-//         })
-//         e.addEventListener('mouseleave', () => {
-//             togglemenu(i)
-//         })
-//     }else if (window.matchMedia("(max-width: 920px)").matches) {
-//         e.addEventListener('click', () => {
-//             togglemenu(i)
-//             let countryNumber__active = document.querySelectorAll('.countryNumber__active')
-//             console.log(countryNumber__active.length)
-//             console.log(countryNumber__active)
-//         })
-//     }
-    
-// })
-// function togglemenu(i) {
-//     countryNumber[i].classList.toggle('countryNumber__active')
-// }
-// })
 
 
 
