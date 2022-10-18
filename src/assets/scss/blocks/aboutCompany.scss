@@ -1,5 +1,30 @@
 .underHeader {
+    // .upperContainer {
+    //     // img {
+    //     //     width: 100%;
+    //     // }
+
+    //     background-image: url(../images/aboutCompany/yasynov_slider1.png);
+
+    //     /* высота прокрутки картинки */
+    //     min-height: 50rem; 
+    
+    //     /* привязываем фоновую картинку, чтобы она не двигалась */
+    //     background-attachment: fixed;
+    //     /* размещаем её по центру */
+    //     background-position: center;
+    //     /* выключаем повторения картинки */
+    //     background-repeat: no-repeat;
+    //     /* подгоняем масштаб картинки под размер блока, в котором она лежит */
+    //     background-size: cover;
+    // }
+
     .upperContainer {
+        margin-top: 10rem;
+        @include breakpoint($srm-bp) {
+            margin-top: 0rem;
+        }
+        
         img {
             width: 100%;
         }
@@ -125,8 +150,17 @@
             }
     
             .imgContainer {
+                
                 img {
                     // width: 100%;
+                    cursor: pointer;
+                    width: 40rem;
+                    border-radius: 2rem;
+                }
+
+                img:hover {
+                    scale: 1.1;
+                    transition: all linear 0.2s;
                 }
             }
     
