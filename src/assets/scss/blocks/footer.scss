@@ -32,7 +32,6 @@
 
     .firstContainer {
         display: flex;
-        // align-items: center;
         justify-content: space-between;
 
         @include breakpoint($sm-bp) {
@@ -42,7 +41,6 @@
         .navigation {
             display: flex;
             gap: 4.3rem;
-            // align-items: center;
             padding-top: 1rem;
 
             @include breakpoint($xl-bp) {
@@ -60,8 +58,6 @@
                 color: #FFFFFF;
                 text-decoration: none;
                 font-family: "NeoSansCyrRegular";
-                // text-shadow: 1px 2px 2px rgb(0 0 0 / 50%);
-                // text-shadow: 0.4rem 0.5rem 0.4rem rgb(0 0 0 / 40%);
                 text-shadow: 0.2rem 0.2rem 0.1rem rgba(0, 0, 0, 0.5);
             }
 
@@ -70,9 +66,6 @@
                 transition: linear 0.2s;
             }
 
-            // a:visited  {
-            //     color: #D9BE8C;
-            // }
         }
 
         .helpContainer {
